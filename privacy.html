@@ -119,6 +119,25 @@
     </div>
   </div>
 </main>
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="4858f4da-8a61-46ac-90eb-324b618d6bdc">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https:// https://lika-max.github.io/thanks.html"> -->
+
+    <button type="submit">Submit Form</button>
+
+</form>
 
 <footer>
   THE OIL RESET PROTOCOL™ — Lika Lee · Educational content, not medical advice
