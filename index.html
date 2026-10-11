@@ -148,13 +148,15 @@
       radial-gradient(ellipse 900px 700px at 50% 120%, rgba(44,90,82,0.10), transparent 60%);
   }
 
-  /* ---------- header ---------- */
+    /* ---------- header ---------- */
   header{
     position:relative; z-index:2;
     padding:22px 0;
     border-bottom:1px solid var(--line);
   }
-  .header-row{display:flex; align-items:center; justify-content:space-between;}
+  /* flex-wrap */
+  .header-row{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;}
+  
   .brand{
     font-family:'Fraunces', serif;
     font-weight:600;
@@ -162,6 +164,26 @@
     letter-spacing:0.02em;
   }
   .brand sup{font-size:0.55em; opacity:0.7;}
+
+  /* ── for ── */
+  .header-nav{
+    display:flex; 
+    align-items:center; 
+    flex-wrap:wrap; 
+    gap:28px; /* RECIPES, PRIVACY */
+  }
+  .header-nav a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    text-decoration:none;
+    color:var(--parchment);
+    transition:opacity .2s ease;
+  }
+  .header-nav a:hover{
+    opacity:0.8;
+  }
+  /* ───────────────────────────────────────────────────────────────── */
+
   .header-cta{
     font-family:'IBM Plex Mono', monospace;
     font-size:0.78rem;
@@ -173,6 +195,7 @@
     transition:border-color .2s ease, background .2s ease;
   }
   .header-cta:hover{border-color:var(--olive-bright); background:rgba(143,163,62,0.08);}
+
 
   /* ---------- hero ---------- */
   .hero{
