@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-mono@latest/latin-600-normal.css">
 
 <style>
-  /* ── Токены основного сайта (index.html) без изменений ── */
+  /* ── MAIN WEBSITE TOKENS (INDEX.HTML) UNCHANGED ── */
   :root{
     --oil-dark:#20130a;
     --oil-dark-2:#2c1a0e;
@@ -95,7 +95,7 @@
 
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
 
-  /* ── Фоновая текстура (как на главной) ── */
+  /* ── BACKGROUND TEXTURE (SAME AS MAIN PAGE) ── */
   .oil-sheen{
     position:fixed; inset:0; z-index:0; pointer-events:none;
     background:
@@ -104,7 +104,7 @@
       radial-gradient(ellipse 900px 700px at 50% 120%, rgba(44,90,82,0.10), transparent 60%);
   }
 
-  /* ── Шапка (как на главной / в квизе) ── */
+  /* ── HEADER (SAME AS MAIN PAGE / IN THE QUIZ) ── */
   header{
     position:relative; z-index:2;
     padding:22px 0;
@@ -144,7 +144,7 @@
   }
   .header-cta:hover{border-color:var(--olive-bright); background:rgba(143,163,62,0.08) !important;}
 
-  /* ── Заголовочная секция страницы ── */
+  /* ── PAGE HEADER SECTION ── */
   section{position:relative; z-index:2;}
   .page-hero{padding:72px 0 44px;}
   .eyebrow{
@@ -170,7 +170,7 @@
     color:var(--parchment-dim);
   }
 
-  /* ── Кнопки (btn-primary — с главной, добавлены secondary/accent в той же логике) ── */
+  /* ── BUTTONS (BTN-PRIMARY — FROM THE MAIN PAGE, SECONDARY/ACCENT ADDED IN THE SAME LOGIC) ── */
   .btn-primary{
     font-family:'IBM Plex Mono', monospace;
     font-size:0.85rem;
@@ -223,7 +223,7 @@
   }
   .btn-accent:hover{background:#e09a55; transform:translateY(-1px);}
 
-  /* ── Полоса действий: Купить книгу / Квиз / Подписка ── */
+  /* ── ACTION BAR: BUY THE BOOK / QUIZ / SUBSCRIPTION ── */
   .action-band{
     background:var(--oil-dark-2);
     border-top:1px solid var(--line);
@@ -239,7 +239,7 @@
     max-width:60ch;
   }
 
-  /* ── Секция рецептов ── */
+  /* ── RECIPE SECTION ── */
   .section-pad{padding:88px 0;}
   .section-head{max-width:62ch; margin-bottom:48px;}
   .section-eyebrow{
@@ -261,7 +261,7 @@
     align-items:start;
   }
 
-  /* ── Карточка рецепта (на базе .spec-card с главной) ── */
+  /* ── RECIPE CARD (BASED ON .SPEC-CARD FROM THE MAIN PAGE) ── */
   .recipe-card{
     background:var(--parchment);
     color:var(--ink);
@@ -321,7 +321,7 @@
     text-transform:none;
   }
 
-  /* Фото / видео / плейсхолдер */
+  /* PHOTO / VIDEO / PLACEHOLDER */
   .recipe-media{
     margin-top:20px;
     border-radius:4px;
@@ -419,7 +419,7 @@
     letter-spacing:0.04em;
   }
 
-  /* Открытый фрагмент платного рецепта */
+  /* FREE SNIPPET OF A PREMIUM RECIPE */
   .preview-block{
     margin-top:16px;
     border-left:2px solid var(--amber);
@@ -437,7 +437,7 @@
   }
   .preview-block p{margin:8px 0 0; font-size:0.93rem; color:rgba(35,20,7,0.8);}
 
-  /* Заблокированная часть — содержимого НЕТ в коде страницы */
+  /* LOCKED SECTION — NO CONTENT IN THE PAGE CODE */
   .locked-panel{
     margin-top:20px;
     background:var(--oil-dark);
@@ -464,7 +464,7 @@
     font-style:italic;
   }
 
-  /* ── Пояснение о доставке платного контента ── */
+  /* ── PAID CONTENT DELIVERY EXPLANATION ── */
   .delivery-note{
     margin-top:40px;
     padding:22px 24px;
@@ -477,7 +477,7 @@
   }
   .delivery-note b{color:var(--parchment);}
 
-  /* ── Подвал (как на главной) ── */
+  /* ── FOOTER (SAME AS MAIN PAGE) ── */
   footer{
     position:relative; z-index:2;
     border-top:1px solid var(--line);
@@ -490,7 +490,7 @@
   footer .foot-extra{margin-top:10px; text-align:center;}
   footer a{color:var(--amber-bright);}
 
-  /* ── Адаптивность ── */
+  /* ── RESPONSIVENESS ── */
   @media (max-width: 900px){
     .recipes-grid{grid-template-columns:1fr;}
   }
@@ -526,7 +526,7 @@
 
 <main>
 
-  <!-- ── Вступление ── -->
+  <!-- ── INTRODUCTION ── -->
   <section class="page-hero">
     <div class="wrap">
       <div class="eyebrow">Bonus library · Not included in the book</div>
@@ -540,7 +540,7 @@
     </div>
   </section>
 
-  <!-- ── Главные действия: книга / квиз / подписка ── -->
+  <!-- ── MAIN ACTIONS: BOOK / QUIZ / SUBSCRIPTION ── -->
   <div class="action-band">
     <div class="wrap action-inner">
       <div class="action-buttons">
@@ -552,7 +552,7 @@
     </div>
   </div>
 
-  <!-- ── Рецепты ── -->
+  <!-- ── RECIPES ── -->
   <section class="section-pad" id="recipes">
     <div class="wrap">
       <div class="section-head">
@@ -562,8 +562,8 @@
       </div>
 
       <div class="recipes-grid" id="recipesGrid">
-        <!-- Карточки рецептов рендерятся из массива RECIPES (см. <script> внизу).
-             Данные платного рецепта НЕ содержат закрытого содержимого — его здесь нет вообще. -->
+        <!-- RECIPE CARDS ARE RENDERED FROM THE RECIPES ARRAY (SEE  AT THE BOTTOM).
+             PAID RECIPE DATA DOES NOT CONTAIN LOCKED CONTENT — IT IS NOT HERE AT ALL. -->
         <noscript>
           <p style="color:var(--parchment-dim);">Recipe cards require JavaScript. The free recipe “Charred Broccolini with Lemon–Pumpkin Seed Oil Dressing” and the subscriber recipe “Golden Turmeric &amp; Hemp Oil Recovery Broth” are also available by contacting us through the links above.</p>
         </noscript>
@@ -580,7 +580,7 @@
 
 </main>
 
-<!-- ── Подвал (копия подвала главной страницы) ── -->
+<!-- ── FOOTER (COPY OF THE MAIN PAGE FOOTER) ── -->
 <footer>
   <div class="wrap foot-row">
     <span>THE OIL RESET PROTOCOL™ — Lika Lee</span>
@@ -593,41 +593,41 @@
 
 <script>
 /* ═══════════════════════════════════════════════════════════════════════════
-   КОНФИГУРАЦИЯ ССЫЛОК
-   >>> ВЛАДЕЛЕЦ САЙТА: ЗАМЕНИТЕ ЗНАЧЕНИЯ ЗДЕСЬ — они применяются ко всем
-       кнопкам страницы (data-link-key) и к paymentUrl платных рецептов. <<<
+   LINK CONFIGURATION
+   >>> SITE OWNER: REPLACE THE VALUES HERE — THEY APPLY TO ALL
+PAGE BUTTONS (DATA-LINK-KEY) AND TO THE PAYMENTURL OF PREMIUM RECIPES. <<<
    ═══════════════════════════════════════════════════════════════════════════ */
 const SITE_CONFIG = {
-  // Главная страница покупки книги (блок #pricing на index.html)
+  // MAIN BOOK PURCHASE PAGE (block #pricing on index.html)
   BOOK_URL: "index.html#pricing",
-  // Страница бесплатного квиза (уже существует в проекте)
+  // FREE QUIZ PAGE (ALREADY EXISTS IN THE PROJECT)
   QUIZ_URL: "test.html",
-  // Страница оплаты подписки в Lava.top.
-  // Сейчас указан продукт Protocol, найденный в index.html. Если подписка на
-  // рецепты — отдельный продукт в Lava.top, создайте его и вставьте сюда его URL.
+  // SUBSCRIPTION PAYMENT PAGE Lava.top.
+  // PRODUCT IS CURRENTLY SPECIFIED Protocol, at index.html. IF SUBSCRIPTION IS FOR
+  // RECIPES ARE A SEPARATE PRODUCT IN LAVA.TOP, CREATE IT AND PASTE ITS URL HERE.
   LAVA_TOP_URL: "https://app.lava.top/products/aced3758-6d9f-4c1e-92a4-15b6784e4186"
 };
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   ДАННЫЕ РЕЦЕПТОВ
-   Поля: title, slug, access ("free" | "paid"), image, video, description,
+  RECIPE DATA
+   MARGINS: title, slug, access ("free" | "paid"), image, video, description,
          cookingTime, servings, ingredients[], steps[], preview, paymentUrl.
 
-   ── КАК ДОБАВИТЬ НОВЫЙ РЕЦЕПТ ──────────────────────────────────────────────
+   ── HOW TO ADD A NEW RECIPE ──────────────────────────────────────────────
    Скопируйте один из двух объектов ниже целиком, вставьте в массив между
    маркерами «ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ» и замените значения.
 
-   БЕСПЛАТНЫЙ: заполните ingredients и steps — они публикуются полностью.
-   ПЛАТНЫЙ:    ingredients: [] и steps: [] — ОБЯЗАТЕЛЬНО пусты!
-               Полный рецепт загружается только в продукт/подписку Lava.top
-               (закрытая страница, файл или пост после оплаты). В preview
-               напишите лишь короткий открытый фрагмент (1–2 предложения).
-   ФОТО/ВИДЕО: положите файл в папку img/ (или video/) репозитория и укажите
-               путь, например image: "img/recipe-broccolini.jpg".
-               Пустое значение "" — показывается аккуратный плейсхолдер.
+  FREE: FILL IN INGREDIENTS AND STEPS — THEY ARE PUBLISHED IN FULL.
+PAID: INGREDIENTS: [] AND STEPS: [] — MUST BE EMPTY!
+THE FULL RECIPE IS ONLY LOADED INTO THE LAVA.TOP PRODUCT/SUBSCRIPTION
+(LOCKED PAGE, FILE, OR POST AFTER PAYMENT). IN PREVIEW,
+WRITE ONLY A SHORT FREE SNIPPET (1–2 SENTENCES).
+PHOTO/VIDEO: PLACE THE FILE IN THE IMG/ (OR VIDEO/) FOLDER OF THE REPOSITORY AND SPECIFY
+THE PATH, FOR EXAMPLE IMAGE: "IMG/RECIPE-BROCCOLINI.JPG".
+AN EMPTY VALUE "" WILL DISPLAY A NEAT PLACEHOLDER.
    ═══════════════════════════════════════════════════════════════════════════ */
 const RECIPES = [
-  /* ═══ ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ (начало) ═══ */
+  /* ═══ ADD NEW RECIPES HERE (START) ═══ */
   {
     title: "Charred Broccolini with Lemon–Pumpkin Seed Oil Dressing",
     slug: "charred-broccolini-pumpkin-seed-oil",
@@ -692,35 +692,35 @@ const RECIPES = [
     title: "Golden Turmeric & Hemp Oil Recovery Broth",
     slug: "golden-turmeric-hemp-oil-broth",
     access: "paid",
-    image: "",  // ← например: "img/recipe-broth.jpg"
+    image: "",  // ← FOR EXAMPLE: "img/recipe-broth.jpg"
     video: "",
     description: "A deeply savoury, slow-simmered vegetable broth finished with a swirl of hemp seed oil — the centrepiece of the subscriber recipe collection, built for the Protocol’s Phase II (Rebuild).",
     cookingTime: "60 min",
     servings: 4,
-    /* ВНИМАНИЕ: для платных рецептов ingredients и steps ВСЕГДА пусты.
-       Полный список ингредиентов и все шаги хранятся только в Lava.top
-       и выдаются покупателю после оплаты. Не добавляйте их сюда! */
+    /* WARNING: FOR PREMIUM RECIPES, INGREDIENTS AND STEPS ARE ALWAYS EMPTY.
+THE FULL LIST OF INGREDIENTS AND ALL STEPS ARE STORED ONLY ON LAVA.TOP
+AND ARE PROVIDED TO THE BUYER AFTER PAYMENT. DO NOT ADD THEM HERE.! */
     ingredients: [],
     steps: [],
     preview: "Why it works: hemp seed oil delivers omega-3 ALA in an ideal ratio — and, like every oil in the Protocol, it is never heated above its stability point. Open fragment — Step 1: char two onion halves in a dry stockpot until blackened at the edges; this is the base of the broth’s colour and depth. The complete ingredient list and the remaining six steps are delivered to subscribers.",
     paymentUrl: SITE_CONFIG.LAVA_TOP_URL
   },
-  /* ═══ ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ (конец) ═══ */
+  /* ═══ ADD NEW RECIPES HERE (END) ═══ */
 ];
 
-/* ── Применение SITE_CONFIG ко всем кнопкам с data-link-key ── */
+/* ── APPLYING SITE_CONFIG TO ALL BUTTONS at data-link-key ── */
 document.querySelectorAll("[data-link-key]").forEach(function(linkEl){
   var url = SITE_CONFIG[linkEl.getAttribute("data-link-key")];
   if(url){
     linkEl.href = url;
-    if(/^https?:/i.test(url)){                 // внешние ссылки — в новой вкладке
+    if(/^https?:/i.test(url)){                 // external links — in a new tab
       linkEl.target = "_blank";
       linkEl.rel = "noopener noreferrer";
     }
   }
 });
 
-/* ── Рендер карточек рецептов из массива RECIPES ── */
+/* ── Rendering recipe cards from an array RECIPES ── */
 (function renderRecipes(){
   var grid = document.getElementById("recipesGrid");
   if(!grid) return;
@@ -784,7 +784,7 @@ document.querySelectorAll("[data-link-key]").forEach(function(linkEl){
     html += media || ph;
 
     if(!isPaid){
-      /* ── БЕСПЛАТНЫЙ РЕЦЕПТ: публикуется полностью ── */
+      /* ── FREE RECIPE: published in full ── */
       if(recipe.ingredients && recipe.ingredients.length){
         html += '<h4 class="recipe-h">Ingredients</h4><ul class="recipe-ingredients">';
         recipe.ingredients.forEach(function(item){ html += '<li>' + esc(item) + '</li>'; });
@@ -797,8 +797,8 @@ document.querySelectorAll("[data-link-key]").forEach(function(linkEl){
       }
       html += '<p class="recipe-foot">Bonus recipe · Not included in the book</p>';
     } else {
-      /* ── ПЛАТНЫЙ РЕЦЕПТ: только анонс и открытый фрагмент.
-            Закрытого содержимого (ингредиентов и шагов) в этом файле НЕТ. ── */
+      /* ── PAID RECIPE: preview and open excerpt only.
+            There is NO hidden content (ingredients and steps) in this file. ── */
       if(recipe.preview){
         html += '<div class="preview-block">' +
                   '<span class="preview-label">Open fragment</span>' +
