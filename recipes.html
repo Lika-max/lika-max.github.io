@@ -1,0 +1,824 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extra Recipes — The Oil Reset Protocol™</title>
+<meta name="description" content="Bonus recipes that are not included in The Oil Reset Protocol™ book — one free recipe open to everyone, and subscriber-only recipes delivered through Lava.top.">
+<link rel="canonical" href="https://lika-max.github.io/recipes.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Extra Recipes — The Oil Reset Protocol™">
+<meta property="og:description" content="Bonus recipes not included in the book. Free recipes for everyone, subscriber recipes delivered via Lava.top.">
+<meta property="og:url" content="https://lika-max.github.io/recipes.html">
+
+<!-- Structured data for the FREE recipe only (paid content is never published here) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "name": "Charred Broccolini with Lemon–Pumpkin Seed Oil Dressing",
+  "description": "A weeknight side built around pumpkin seed oil used the way lipid chemistry wants it — never heated, always finished.",
+  "totalTime": "PT20M",
+  "recipeYield": "2 servings",
+  "recipeIngredient": [
+    "1 large bunch broccolini (about 300 g), ends trimmed",
+    "1 tsp extra-virgin olive oil (for charring)",
+    "2 tbsp extra-virgin pumpkin seed oil (finishing only)",
+    "1 tbsp fresh lemon juice",
+    "1 tsp Dijon mustard",
+    "1 small garlic clove, grated",
+    "2 tbsp toasted pumpkin seeds",
+    "Flaky sea salt and freshly cracked black pepper"
+  ],
+  "recipeInstructions": [
+    "Heat a large skillet over medium-high heat. Toss the broccolini with 1 tsp olive oil and a pinch of salt.",
+    "Sear undisturbed for 2–3 minutes until deeply charred in spots, then turn and cook 2–3 minutes more until crisp-tender.",
+    "Whisk lemon juice, Dijon and grated garlic in a small bowl; let stand 5 minutes to mellow the garlic.",
+    "Pull the skillet off the heat, wait 60 seconds, then stir in the pumpkin seed oil — it is a finishing oil and must never be heated.",
+    "Plate the broccolini, spoon over the dressing, scatter with toasted pumpkin seeds, flaky salt and cracked pepper.",
+    "Serve immediately alongside grilled fish or white beans."
+  ]
+}
+</script>
+
+<!-- Fonts: Fraunces + IBM Plex Sans/Mono (те же семейства, что и на основном сайте) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/fraunces@latest/latin-600-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/fraunces@latest/latin-700-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-sans@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-sans@latest/latin-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-sans@latest/latin-600-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-mono@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-mono@latest/latin-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/ibm-plex-mono@latest/latin-600-normal.css">
+
+<style>
+  /* ── Токены основного сайта (index.html) без изменений ── */
+  :root{
+    --oil-dark:#20130a;
+    --oil-dark-2:#2c1a0e;
+    --amber:#a1652f;
+    --amber-bright:#d68a3f;
+    --olive:#5c6b2f;
+    --olive-bright:#8fa33e;
+    --parchment:#f4ecda;
+    --parchment-dim:#e8dcc2;
+    --ink:#231407;
+    --teal:#2c5a52;
+    --teal-bright:#4f8f83;
+    --line: rgba(244,236,218,0.16);
+    --max: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--oil-dark);
+    color:var(--parchment);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  :focus-visible{outline:2px solid var(--olive-bright); outline-offset:3px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  /* ── Фоновая текстура (как на главной) ── */
+  .oil-sheen{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(ellipse 900px 500px at 12% -8%, rgba(214,138,63,0.18), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 105% 15%, rgba(92,107,47,0.14), transparent 55%),
+      radial-gradient(ellipse 900px 700px at 50% 120%, rgba(44,90,82,0.10), transparent 60%);
+  }
+
+  /* ── Шапка (как на главной / в квизе) ── */
+  header{
+    position:relative; z-index:2;
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  .brand{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+    text-decoration:none;
+  }
+  .brand sup{font-size:0.55em; opacity:0.7;}
+  .header-nav{display:flex; align-items:center; flex-wrap:wrap; gap:6px;}
+  .header-nav a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    padding:9px 14px;
+    text-decoration:none;
+    color:var(--parchment-dim);
+    border-radius:100px;
+    transition:color .2s ease, background .2s ease;
+  }
+  .header-nav a:hover{color:var(--parchment); background:rgba(244,236,218,0.06);}
+  .header-nav a[aria-current="page"]{color:var(--olive-bright);}
+  .header-cta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    padding:9px 16px;
+    border:1px solid var(--line);
+    border-radius:100px;
+    text-decoration:none;
+    color:var(--parchment) !important;
+    background:none !important;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .header-cta:hover{border-color:var(--olive-bright); background:rgba(143,163,62,0.08) !important;}
+
+  /* ── Заголовочная секция страницы ── */
+  section{position:relative; z-index:2;}
+  .page-hero{padding:72px 0 44px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--olive-bright);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:26px;
+  }
+  .eyebrow::before{content:""; width:26px; height:1px; background:var(--olive-bright);}
+  .page-hero h1{
+    font-size:clamp(2.1rem, 4.6vw, 3.6rem);
+    line-height:1.06;
+    max-width:18ch;
+  }
+  .page-hero h1 em{font-style:italic; color:var(--amber-bright);}
+  .hero-sub{
+    margin-top:22px;
+    max-width:64ch;
+    font-size:1.08rem;
+    color:var(--parchment-dim);
+  }
+
+  /* ── Кнопки (btn-primary — с главной, добавлены secondary/accent в той же логике) ── */
+  .btn-primary{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    letter-spacing:0.02em;
+    background:var(--olive-bright);
+    color:#161d08;
+    border:none;
+    padding:15px 26px;
+    border-radius:4px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-primary:hover{background:#a4bb52; transform:translateY(-1px);}
+  .btn-secondary{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    letter-spacing:0.02em;
+    background:transparent;
+    color:var(--parchment);
+    border:1px solid var(--line);
+    padding:14px 25px;
+    border-radius:4px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    transition:transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .btn-secondary:hover{border-color:var(--olive-bright); background:rgba(143,163,62,0.08); transform:translateY(-1px);}
+  .btn-accent{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    letter-spacing:0.02em;
+    background:var(--amber-bright);
+    color:#2b1a08;
+    border:none;
+    padding:15px 26px;
+    border-radius:4px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-accent:hover{background:#e09a55; transform:translateY(-1px);}
+
+  /* ── Полоса действий: Купить книгу / Квиз / Подписка ── */
+  .action-band{
+    background:var(--oil-dark-2);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .action-inner{padding:32px 0;}
+  .action-buttons{display:flex; gap:14px; flex-wrap:wrap;}
+  .action-note{
+    margin-top:16px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--parchment-dim);
+    max-width:60ch;
+  }
+
+  /* ── Секция рецептов ── */
+  .section-pad{padding:88px 0;}
+  .section-head{max-width:62ch; margin-bottom:48px;}
+  .section-eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--teal-bright);
+    margin-bottom:14px;
+    display:block;
+  }
+  .section-head h2{font-size:clamp(1.7rem, 3.4vw, 2.5rem); line-height:1.14;}
+  .section-head p{margin-top:16px; color:var(--parchment-dim); font-size:1.04rem;}
+
+  .recipes-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    align-items:start;
+  }
+
+  /* ── Карточка рецепта (на базе .spec-card с главной) ── */
+  .recipe-card{
+    background:var(--parchment);
+    color:var(--ink);
+    border-radius:6px;
+    padding:28px 26px 26px;
+    position:relative;
+    overflow:hidden;
+  }
+  .recipe-card::before{
+    content:"";
+    position:absolute; top:0; left:0; right:0; height:6px;
+    background:var(--card-accent, var(--olive));
+  }
+  .recipe-card.is-free{--card-accent:var(--olive);}
+  .recipe-card.is-paid{--card-accent:var(--amber);}
+  .recipe-top{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  .spec-index{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    color:var(--card-accent, var(--olive));
+    font-weight:600;
+    text-transform:uppercase;
+  }
+  .badge{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding:5px 13px;
+    border-radius:100px;
+    white-space:nowrap;
+  }
+  .badge-free{background:var(--olive-bright); color:#161d08;}
+  .badge-paid{background:var(--amber-bright); color:#2b1a08;}
+
+  .recipe-card h3{font-size:1.42rem; margin-top:14px; line-height:1.18;}
+  .recipe-desc{margin-top:12px; font-size:0.95rem; color:rgba(35,20,7,0.72); line-height:1.55;}
+
+  .recipe-meta{
+    margin-top:18px;
+    display:flex; gap:30px; flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:rgba(35,20,7,0.55);
+  }
+  .recipe-meta b{
+    display:block;
+    font-family:'Fraunces', serif;
+    font-size:1.25rem;
+    color:var(--ink);
+    font-weight:600;
+    letter-spacing:0;
+    text-transform:none;
+  }
+
+  /* Фото / видео / плейсхолдер */
+  .recipe-media{
+    margin-top:20px;
+    border-radius:4px;
+    overflow:hidden;
+    background:var(--oil-dark);
+    line-height:0;
+  }
+  .recipe-media img,
+  .recipe-media video{
+    width:100%;
+    aspect-ratio:16 / 10;
+    object-fit:cover;
+    display:block;
+  }
+  .media-placeholder{
+    aspect-ratio:16 / 10;
+    line-height:1.5;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:8px;
+    padding:20px;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 300px 160px at 25% 15%, rgba(214,138,63,0.28), transparent 65%),
+      radial-gradient(ellipse 320px 180px at 85% 90%, rgba(92,107,47,0.25), transparent 60%),
+      linear-gradient(135deg, var(--oil-dark), var(--oil-dark-2));
+    border:1px dashed rgba(244,236,218,0.28);
+    border-radius:4px;
+    color:var(--parchment-dim);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+  }
+  .media-placeholder b{
+    font-family:'Fraunces', serif;
+    font-size:1.05rem;
+    font-weight:600;
+    letter-spacing:0;
+    text-transform:none;
+    color:var(--parchment);
+  }
+
+  .recipe-h{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:600;
+    color:rgba(35,20,7,0.55);
+    margin:26px 0 0;
+  }
+  .recipe-ingredients{list-style:none; margin:12px 0 0; padding:0;}
+  .recipe-ingredients li{
+    display:flex; gap:10px; align-items:baseline;
+    padding:8px 0;
+    font-size:0.93rem;
+    color:rgba(35,20,7,0.85);
+    border-bottom:1px dashed rgba(35,20,7,0.14);
+  }
+  .recipe-ingredients li:last-child{border-bottom:none;}
+  .recipe-ingredients li::before{
+    content:"✓";
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--olive);
+    font-weight:600;
+    flex-shrink:0;
+  }
+  .recipe-steps{list-style:none; margin:12px 0 0; padding:0; counter-reset:rstep;}
+  .recipe-steps li{
+    counter-increment:rstep;
+    position:relative;
+    padding:10px 0 10px 46px;
+    font-size:0.94rem;
+    color:rgba(35,20,7,0.85);
+    border-bottom:1px dashed rgba(35,20,7,0.14);
+  }
+  .recipe-steps li:last-child{border-bottom:none;}
+  .recipe-steps li::before{
+    content:counter(rstep, decimal-leading-zero);
+    position:absolute; left:0; top:12px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    font-weight:600;
+    color:var(--card-accent, var(--olive));
+  }
+
+  .recipe-foot{
+    margin-top:22px;
+    padding-top:14px;
+    border-top:1px dashed rgba(35,20,7,0.18);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    color:rgba(35,20,7,0.5);
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+  }
+
+  /* Открытый фрагмент платного рецепта */
+  .preview-block{
+    margin-top:16px;
+    border-left:2px solid var(--amber);
+    background:rgba(161,101,47,0.08);
+    border-radius:0 4px 4px 0;
+    padding:14px 16px;
+  }
+  .preview-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--amber);
+    font-weight:600;
+  }
+  .preview-block p{margin:8px 0 0; font-size:0.93rem; color:rgba(35,20,7,0.8);}
+
+  /* Заблокированная часть — содержимого НЕТ в коде страницы */
+  .locked-panel{
+    margin-top:20px;
+    background:var(--oil-dark);
+    border-radius:8px;
+    padding:24px 22px;
+    color:var(--parchment);
+  }
+  .locked-head{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--amber-bright);
+    font-weight:600;
+    display:flex; align-items:center; gap:10px;
+  }
+  .locked-head::before{content:""; width:20px; height:1px; background:var(--amber-bright); flex-shrink:0;}
+  .locked-panel p{margin:12px 0 0; font-size:0.88rem; color:var(--parchment-dim);}
+  .locked-panel .btn-accent{margin-top:18px; width:100%;}
+  .locked-note{
+    margin-top:12px !important;
+    font-size:0.78rem !important;
+    color:rgba(244,236,218,0.62) !important;
+    font-style:italic;
+  }
+
+  /* ── Пояснение о доставке платного контента ── */
+  .delivery-note{
+    margin-top:40px;
+    padding:22px 24px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:rgba(0,0,0,0.14);
+    font-size:0.9rem;
+    color:var(--parchment-dim);
+    max-width:78ch;
+  }
+  .delivery-note b{color:var(--parchment);}
+
+  /* ── Подвал (как на главной) ── */
+  footer{
+    position:relative; z-index:2;
+    border-top:1px solid var(--line);
+    padding:36px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.75rem;
+    color:var(--parchment-dim);
+  }
+  footer .foot-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer .foot-extra{margin-top:10px; text-align:center;}
+  footer a{color:var(--amber-bright);}
+
+  /* ── Адаптивность ── */
+  @media (max-width: 900px){
+    .recipes-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width: 640px){
+    .wrap{padding:0 20px;}
+    .page-hero{padding:52px 0 36px;}
+    .section-pad{padding:64px 0;}
+    .header-row{justify-content:flex-start;}
+    .header-nav{width:100%;}
+    .header-nav a{padding:8px 10px; font-size:0.74rem;}
+    .action-buttons{width:100%;}
+    .action-buttons a{flex:1 1 100%;}
+    .recipe-card{padding:24px 20px 22px;}
+    .recipe-meta{gap:22px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="oil-sheen" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">THE OIL RESET <sup>PROTOCOL™</sup></a>
+    <nav class="header-nav" aria-label="Site navigation">
+      <a href="index.html">The Protocol</a>
+      <a href="test.html">Free Test</a>
+      <a href="recipes.html" aria-current="page">Extra Recipes</a>
+      <a class="header-cta" href="index.html#pricing">Buy the Book →</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── Вступление ── -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Bonus library · Not included in the book</div>
+      <h1>Extra recipes that never made it into <em>the book</em>.</h1>
+      <p class="hero-sub">
+        These additional recipes are <strong>not part of</strong> The Oil Reset Protocol™ — they live here
+        as bonus kitchen practice built on the same seven metabolic oils. Free recipes are open to everyone.
+        Subscription recipes are delivered privately through Lava.top after checkout, so their full versions
+        are never stored in this public page.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Главные действия: книга / квиз / подписка ── -->
+  <div class="action-band">
+    <div class="wrap action-inner">
+      <div class="action-buttons">
+        <a class="btn-primary" data-link-key="BOOK_URL" href="index.html#pricing">Buy the Book</a>
+        <a class="btn-secondary" data-link-key="QUIZ_URL" href="test.html">Take the Quiz</a>
+        <a class="btn-accent" data-link-key="LAVA_TOP_URL" href="https://app.lava.top/products/aced3758-6d9f-4c1e-92a4-15b6784e4186" target="_blank" rel="noopener noreferrer">Get a Subscription</a>
+      </div>
+      <p class="action-note">After payment you’ll receive access to the full version of every subscriber recipe — delivered directly by Lava.top.</p>
+    </div>
+  </div>
+
+  <!-- ── Рецепты ── -->
+  <section class="section-pad" id="recipes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Free &amp; subscription</span>
+        <h2>Two demo recipes to try this week.</h2>
+        <p>One recipe is completely free — full ingredients and method, right below. The second is a subscriber exclusive: only a short open fragment is published here; the rest arrives after checkout.</p>
+      </div>
+
+      <div class="recipes-grid" id="recipesGrid">
+        <!-- Карточки рецептов рендерятся из массива RECIPES (см. <script> внизу).
+             Данные платного рецепта НЕ содержат закрытого содержимого — его здесь нет вообще. -->
+        <noscript>
+          <p style="color:var(--parchment-dim);">Recipe cards require JavaScript. The free recipe “Charred Broccolini with Lemon–Pumpkin Seed Oil Dressing” and the subscriber recipe “Golden Turmeric &amp; Hemp Oil Recovery Broth” are also available by contacting us through the links above.</p>
+        </noscript>
+      </div>
+
+      <p class="delivery-note">
+        <b>How subscriber recipes are delivered.</b> This site is public static hosting, so full paid recipes
+        are never published here — not in the HTML, not in scripts, not in data files. After you subscribe on
+        Lava.top, the complete recipe (ingredients, step-by-step method, photos and printable cards) is sent
+        to you directly through Lava.top’s secure delivery.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Подвал (копия подвала главной страницы) ── -->
+<footer>
+  <div class="wrap foot-row">
+    <span>THE OIL RESET PROTOCOL™ — Lika Lee</span>
+    <span>Educational content · Not medical advice · Medical Disclaimer: The Oil Reset Protocol™ is for educational/informational purposes only and not a substitute for professional medical advice, diagnosis, or treatment. Always consult a physician before changing your diet or wellness program. Materials are intended for adults only; recommendations for children are excluded. Individual results vary.</span>
+  </div>
+  <div class="wrap foot-extra">
+    <span>Want to go deeper? <a href="https://medium.com/@kvarty2020_93078/why-are-seed-oils-bad-71fa35cf1b56" target="_blank" rel="noopener noreferrer">Read more on Medium →</a></span>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   КОНФИГУРАЦИЯ ССЫЛОК
+   >>> ВЛАДЕЛЕЦ САЙТА: ЗАМЕНИТЕ ЗНАЧЕНИЯ ЗДЕСЬ — они применяются ко всем
+       кнопкам страницы (data-link-key) и к paymentUrl платных рецептов. <<<
+   ═══════════════════════════════════════════════════════════════════════════ */
+const SITE_CONFIG = {
+  // Главная страница покупки книги (блок #pricing на index.html)
+  BOOK_URL: "index.html#pricing",
+  // Страница бесплатного квиза (уже существует в проекте)
+  QUIZ_URL: "test.html",
+  // Страница оплаты подписки в Lava.top.
+  // Сейчас указан продукт Protocol, найденный в index.html. Если подписка на
+  // рецепты — отдельный продукт в Lava.top, создайте его и вставьте сюда его URL.
+  LAVA_TOP_URL: "https://app.lava.top/products/aced3758-6d9f-4c1e-92a4-15b6784e4186"
+};
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ДАННЫЕ РЕЦЕПТОВ
+   Поля: title, slug, access ("free" | "paid"), image, video, description,
+         cookingTime, servings, ingredients[], steps[], preview, paymentUrl.
+
+   ── КАК ДОБАВИТЬ НОВЫЙ РЕЦЕПТ ──────────────────────────────────────────────
+   Скопируйте один из двух объектов ниже целиком, вставьте в массив между
+   маркерами «ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ» и замените значения.
+
+   БЕСПЛАТНЫЙ: заполните ingredients и steps — они публикуются полностью.
+   ПЛАТНЫЙ:    ingredients: [] и steps: [] — ОБЯЗАТЕЛЬНО пусты!
+               Полный рецепт загружается только в продукт/подписку Lava.top
+               (закрытая страница, файл или пост после оплаты). В preview
+               напишите лишь короткий открытый фрагмент (1–2 предложения).
+   ФОТО/ВИДЕО: положите файл в папку img/ (или video/) репозитория и укажите
+               путь, например image: "img/recipe-broccolini.jpg".
+               Пустое значение "" — показывается аккуратный плейсхолдер.
+   ═══════════════════════════════════════════════════════════════════════════ */
+const RECIPES = [
+  /* ═══ ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ (начало) ═══ */
+  {
+    title: "Charred Broccolini with Lemon–Pumpkin Seed Oil Dressing",
+    slug: "charred-broccolini-pumpkin-seed-oil",
+    access: "free",
+    image: "",  // ← например: "img/recipe-broccolini.jpg"
+    video: "",  // ← например: "video/recipe-broccolini.mp4"
+    description: "A weeknight side built around pumpkin seed oil used the way lipid chemistry wants it — never heated, always finished. Deep char, bright citrus, and a nutty green dressing that makes the oil the star.",
+    cookingTime: "20 min",
+    servings: 2,
+    ingredients: [
+      "1 large bunch broccolini (about 300 g), ends trimmed",
+      "1 tsp extra-virgin olive oil (for charring — stable at medium-high heat)",
+      "2 tbsp extra-virgin pumpkin seed oil (finishing only, never heated)",
+      "1 tbsp fresh lemon juice",
+      "1 tsp Dijon mustard",
+      "1 small garlic clove, grated",
+      "2 tbsp toasted pumpkin seeds",
+      "Flaky sea salt and freshly cracked black pepper"
+    ],
+    steps: [
+      "Heat a large skillet over medium-high heat until hot. Toss the broccolini with 1 tsp olive oil and a pinch of salt.",
+      "Sear the broccolini undisturbed for 2–3 minutes until deeply charred in spots, then turn and cook 2–3 minutes more, until stems are crisp-tender.",
+      "Meanwhile, whisk the lemon juice, Dijon and grated garlic in a small bowl. Let stand 5 minutes to mellow the garlic.",
+      "Pull the skillet off the heat and wait 60 seconds, then stir in the pumpkin seed oil — it is a finishing oil and must never be heated.",
+      "Plate the broccolini, spoon over the dressing and scatter with toasted pumpkin seeds, flaky salt and cracked pepper.",
+      "Serve immediately alongside grilled fish or white beans."
+    ],
+    preview: "",
+    paymentUrl: ""
+  },
+  {
+  title: "Homemade Mayonnaise with High-Oleic Unrefined Sunflower Oil",
+  slug: "homemade-mayonnaise-high-oleic-sunflower-oil",
+  access: "free",
+  image: "",  // ← for example: "img/recipe-homemade-mayonnaise.jpg"
+  video: "",  // ← for example: "video/recipe-homemade-mayonnaise.mp4"
+  description: "A rich, silky homemade mayonnaise made with high-oleic unrefined sunflower oil. The oil is used cold to preserve its delicate flavor, while Dijon mustard and fresh lemon juice create a bright, balanced emulsion.",
+  cookingTime: "3 min",
+  servings: 6,
+  ingredients: [
+    "1 large egg yolk, at room temperature",
+    "1 tsp Dijon mustard",
+    "1 tbsp fresh lemon juice",
+    "180 ml high-oleic unrefined sunflower oil, at room temperature",
+    "1/5 tsp fine sea salt",
+    "Freshly ground black pepper, optional"
+  ],
+  steps: [
+    "Add the ingredients: Pour the oil into a tall, narrow blending jar. Crack the egg and gently drop it into the oil. Add the lemon juice (or vinegar), mustard, and a pinch of salt.",
+    "Let it settle: Allow the ingredients to settle for about 30 seconds. The egg must sink completely to the very bottom, sitting beneath the layer of oil.",
+    "Position the blender: Lower your immersion blender all the way to the bottom of the jar. Place the blender blade and guard directly over the whole egg at the bottom of the cup, underneath the oil. It is crucial that the egg is trapped right under the guard.",
+    "Blend without moving: Turn the blender on high and do not move it until a thick emulsion forms at the bottom. Keep it pressed flat against the bottom of the jar for about 10 to 15 seconds. You will see a creamy white mayonnaise quickly rising up from the bottom.",
+    "Finish the emulsion: Once most of the oil is emulsified, slowly tilt and raise the blender head toward the top of the jar to draw in the remaining oil from the surface.",
+    "Transfer the mayonnaise to a clean, airtight jar and refrigerate immediately.",
+    "Chill for at least 30 minutes before serving. Use within 3 days and keep refrigerated at all times."
+  ],
+  preview: "A creamy homemade mayonnaise with a delicate sunflower flavor, fresh lemon acidity and a smooth, spoonable texture.",
+  paymentUrl: ""
+},
+
+  {
+    title: "Golden Turmeric & Hemp Oil Recovery Broth",
+    slug: "golden-turmeric-hemp-oil-broth",
+    access: "paid",
+    image: "",  // ← например: "img/recipe-broth.jpg"
+    video: "",
+    description: "A deeply savoury, slow-simmered vegetable broth finished with a swirl of hemp seed oil — the centrepiece of the subscriber recipe collection, built for the Protocol’s Phase II (Rebuild).",
+    cookingTime: "60 min",
+    servings: 4,
+    /* ВНИМАНИЕ: для платных рецептов ingredients и steps ВСЕГДА пусты.
+       Полный список ингредиентов и все шаги хранятся только в Lava.top
+       и выдаются покупателю после оплаты. Не добавляйте их сюда! */
+    ingredients: [],
+    steps: [],
+    preview: "Why it works: hemp seed oil delivers omega-3 ALA in an ideal ratio — and, like every oil in the Protocol, it is never heated above its stability point. Open fragment — Step 1: char two onion halves in a dry stockpot until blackened at the edges; this is the base of the broth’s colour and depth. The complete ingredient list and the remaining six steps are delivered to subscribers.",
+    paymentUrl: SITE_CONFIG.LAVA_TOP_URL
+  },
+  /* ═══ ДОБАВЛЯЙТЕ НОВЫЕ РЕЦЕПТЫ ЗДЕСЬ (конец) ═══ */
+];
+
+/* ── Применение SITE_CONFIG ко всем кнопкам с data-link-key ── */
+document.querySelectorAll("[data-link-key]").forEach(function(linkEl){
+  var url = SITE_CONFIG[linkEl.getAttribute("data-link-key")];
+  if(url){
+    linkEl.href = url;
+    if(/^https?:/i.test(url)){                 // внешние ссылки — в новой вкладке
+      linkEl.target = "_blank";
+      linkEl.rel = "noopener noreferrer";
+    }
+  }
+});
+
+/* ── Рендер карточек рецептов из массива RECIPES ── */
+(function renderRecipes(){
+  var grid = document.getElementById("recipesGrid");
+  if(!grid) return;
+
+  function esc(value){
+    return String(value)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function mediaHtml(recipe){
+    if(recipe.video){
+      return '<div class="recipe-media"><video controls preload="metadata" ' +
+             (recipe.image ? 'poster="' + esc(recipe.image) + '" ' : '') +
+             'src="' + esc(recipe.video) + '">Your browser does not support video.</video></div>';
+    }
+    if(recipe.image){
+      return '<div class="recipe-media"><img src="' + esc(recipe.image) +
+             '" alt="' + esc(recipe.title) + ' — photo" loading="lazy" ' +
+             'onerror="this.parentNode.innerHTML=this.parentNode.dataset.ph"></div>';
+    }
+    return "";
+  }
+
+  function placeholderHtml(recipe){
+    return '<div class="media-placeholder" role="img" aria-label="Photo placeholder for ' + esc(recipe.title) + '">' +
+           '<b>Recipe photo</b>' +
+           '<span>Slot for a photo or video</span>' +
+           '<span>img/' + esc(recipe.slug) + '.jpg</span></div>';
+  }
+
+  RECIPES.forEach(function(recipe){
+    var isPaid = recipe.access === "paid";
+    var card = document.createElement("article");
+    card.className = "recipe-card " + (isPaid ? "is-paid" : "is-free");
+    card.id = recipe.slug;
+    card.setAttribute("aria-labelledby", recipe.slug + "-title");
+
+    var ph = placeholderHtml(recipe);
+    var html = "";
+
+    html += '<div class="recipe-top">' +
+              '<span class="spec-index">' + (isPaid ? "Subscriber recipe" : "Free recipe") + '</span>' +
+              '<span class="badge ' + (isPaid ? "badge-paid" : "badge-free") + '">' +
+                (isPaid ? "Subscription only" : "Free") +
+              '</span>' +
+            '</div>';
+
+    html += '<h3 id="' + esc(recipe.slug) + '-title">' + esc(recipe.title) + '</h3>';
+    html += '<p class="recipe-desc">' + esc(recipe.description) + '</p>';
+
+    html += '<div class="recipe-meta">' +
+              '<span><b>' + esc(recipe.cookingTime) + '</b>cooking time</span>' +
+              '<span><b>' + esc(recipe.servings) + '</b>servings</span>' +
+            '</div>';
+
+    var media = mediaHtml(recipe);
+    if(media && recipe.image){
+      media = media.replace('class="recipe-media"', 'class="recipe-media" data-ph="' + esc(ph) + '"');
+    }
+    html += media || ph;
+
+    if(!isPaid){
+      /* ── БЕСПЛАТНЫЙ РЕЦЕПТ: публикуется полностью ── */
+      if(recipe.ingredients && recipe.ingredients.length){
+        html += '<h4 class="recipe-h">Ingredients</h4><ul class="recipe-ingredients">';
+        recipe.ingredients.forEach(function(item){ html += '<li>' + esc(item) + '</li>'; });
+        html += '</ul>';
+      }
+      if(recipe.steps && recipe.steps.length){
+        html += '<h4 class="recipe-h">Method</h4><ol class="recipe-steps">';
+        recipe.steps.forEach(function(step){ html += '<li>' + esc(step) + '</li>'; });
+        html += '</ol>';
+      }
+      html += '<p class="recipe-foot">Bonus recipe · Not included in the book</p>';
+    } else {
+      /* ── ПЛАТНЫЙ РЕЦЕПТ: только анонс и открытый фрагмент.
+            Закрытого содержимого (ингредиентов и шагов) в этом файле НЕТ. ── */
+      if(recipe.preview){
+        html += '<div class="preview-block">' +
+                  '<span class="preview-label">Open fragment</span>' +
+                  '<p>' + esc(recipe.preview) + '</p>' +
+                '</div>';
+      }
+      html += '<div class="locked-panel" role="note">' +
+                '<div class="locked-head">Locked · Full recipe for subscribers</div>' +
+                '<p>The complete ingredient list and the remaining step-by-step method are not published on this site. They are delivered privately through Lava.top after checkout — subscriber content never lives in a public page.</p>' +
+                '<a class="btn-accent" href="' + esc(recipe.paymentUrl || SITE_CONFIG.LAVA_TOP_URL) + '" target="_blank" rel="noopener noreferrer">Get a Subscription</a>' +
+                '<p class="locked-note">After payment you’ll receive access to the full version of this recipe.</p>' +
+              '</div>';
+      html += '<p class="recipe-foot">Bonus recipe · Not included in the book</p>';
+    }
+
+    card.innerHTML = html;
+    grid.appendChild(card);
+  });
+})();
+</script>
+
+</body>
+</html>
