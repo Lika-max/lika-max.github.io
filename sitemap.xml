@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://sitemaps.org" xmlns:xhtml="http://w3.org">
 
   <url>
        <loc>https://oilresetprotocol.com/</loc>
-       <lastmod>2026-07-21T12:03:53+00:00</lastmod>
+       <lastmod>2026-10-24T21:30:00+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>1.000</priority>
+       <priority>1.00</priority>
   </url>
+
   <url>
        <loc>https://oilresetprotocol.com/test.html</loc>
-       <lastmod>2026-07-22T06:47:08+00:00</lastmod>
+       <lastmod>2026-10-24T21:30:00+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.80</priority>
   </url>
   
-  </urlset>
+</urlset>
+
